@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Profile🙃</title>
+    <title>My Profile🙃</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/images.png" type="image/x-icon">
 </head>
@@ -24,10 +24,10 @@
             <center>
                 <h4 style="border-radius: 35px; transform: scale(1.5);">My Info</h4>    
                 <h4 class="text-white"><span class="text-main">ชื่อ : </span>อาง</h4>
-                <h4 class="text-white"><span class="text-main">ชื่อใน Discord : </span>Mr. Emptiness</h4>
+                <h4 class="text-white"><span class="text-main">ชื่อใน Discord : </span><span class="hover-name"></span></h4>
                 <h4 class="text-white"><span class="text-main">เพศ : </span>ชาย</h4>
-                <h4 class="text-white"><span class="text-main">เกิด : </span>8 มีนา 2553</h4>
-                <h4 class="text-white"><span class="text-main">ปัจจุบันอายุ : <span class="white" id="age"></span></span></h4>
+                <h4 class="text-white"><span class="text-main">เกิด : </span><span class="hover-birthday"></span></h4>
+                <h4 class="text-white"><span class="text-main">ปัจจุบันอายุ : <span class="white" id="age"></span></span> ปี</h4>
                 <br>
                 <div class="hover-box">
                     <h4 class="Text-Hide"><span class="text-main">ข้อมูลลับ : </span>ผมเป็น M / Pansexual 
@@ -68,7 +68,6 @@
             }
             return age;
         }
-
         document.getElementById("age").innerText = calculateAge("2010-03-08");
     </script>
 </body>
