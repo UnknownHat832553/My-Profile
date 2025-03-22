@@ -141,6 +141,32 @@ h1{
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+.hover-name::after {
+    content: "Mr. Emptiness";
+    color: white;
+    display: inline-block;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.hover-name:hover::after {
+    content: "iam_emptiness8353";
+    color: #ffcc00;
+}
+
+.hover-birthday::after {
+    content: "8 มีนา 2553";
+    color: white;
+    display: inline-block;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.hover-birthday:hover::after {
+    content: "8 Mar 2010";
+    color: #ffcc00;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
 }
