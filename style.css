@@ -1,0 +1,154 @@
+body{
+    background: linear-gradient(to top,#303030 ,#000000)fixed;
+}
+
+:root {
+    --main-color: #ffffff;
+    --sub-color: #000000;
+    --up-color: #fffb00;
+    --down-color: #ff0000;
+}
+
+* {
+    font-family: 'Kanit', sans-serif;
+}
+
+.profile{
+    width: 600px;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.top{
+    padding-left: 5%;
+}
+
+.home img{
+    filter: drop-shadow(0 0 .2em #ffffffaa);
+}
+
+.home img{
+    transition: all .5s ease;
+}
+
+.home img:hover{
+    filter: drop-shadow(0 0 .5em #ffffff);
+}
+
+.profile{
+    margin: auto;
+}
+
+.float-ani{
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-30px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+h1{
+    color: #fff;
+}
+
+.me{
+    filter: drop-shadow(0 0 .5em #ffffff);
+    border-radius: 200px;
+    border: solid 10px #000000;
+}
+
+.text-ani{
+    color: #000000;
+    font-size: 60px;
+    filter: drop-shadow(0 0 .5em #ffffff);
+    font-family: 'Prompt', sans-serif;
+    transition: all .5s ease;
+}
+
+.text-ani:hover{
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 .10em #000000);
+    color: #fff;
+}
+
+.border{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.border-main{
+    border: solid 10px #000000;
+    width: 600px;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: #303030;
+}
+
+.text-white{
+    font-weight: bold;
+    color: #fff;
+    transform: scale(1.5);
+}
+
+.text-main{
+    color: #000000;
+    visibility: visible;
+    transform: scale(1.5);
+    font-weight: bold;
+}
+
+.Text-Hide{
+    transition: all .2s ease;
+    visibility: hidden;
+    transform: scale(1.5);
+    font-weight: bold;
+    
+}
+
+.hover-box{
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hover-box:hover .Text-Hide{
+    transform: scale(2);
+    color: #fff;
+    visibility: visible;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+    border: solid 5px #111;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background: -webkit-linear-gradient(var(--up-color) 0%, var(--down-color) 100%);
+}
+
+.footer{
+    padding-top: 5px;
+}
